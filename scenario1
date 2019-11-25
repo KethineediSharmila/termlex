@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+ </head>
+<script>
+function validate()
+{
+ if(company details.psw.value==""){
+alert("Password Field Must Not Be Empty");
+return false;
+}
+</script>
+<body>
+<h1 align="center" style="color:red">Registration form</h1>
+<form name="company details" style="background-color:tomato">
+<div class="container" align="center" ng-app="myApp">
+<fieldset>
+<label>User name</label>&nbsp; &nbsp;
+<input type="text" placeholder="Enter username" name="username"><br><br>
+<label>Email</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="email" placeholder="enter email" name="email" multiple required><br><br>
+<label>Password</label>&nbsp; &nbsp;
+<input type="password" placeholder="enter password" name="pwd" id="psw" minlength="8" required><br><br>
+<label>Company</label>
+<input type="text" placeholder="enter company" name="company"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<textarea rows="3" cols="30" name="address">Address
+</textarea>
+<input type="checkbox">For accepting terms and conditions<br><br>
+<button type="submit" name="subData" style="background-color:green" ng-click="validate()">Submit</button>
+<button type="reset" name="resetData" style="background-color:green">Reset</button>
+</fieldset>
+</div>
+</form>
+</body>
+</html>
